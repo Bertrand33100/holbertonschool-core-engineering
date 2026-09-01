@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
-for i in range(97, 123):
-    if i != 101 and i != 113:
-        print("%c" % i, end="")
+alphabet = ""
+
+for letter in range(97, 123):
+    character = chr(letter)
+    if character != "e" and character != "q":
+        alphabet += character
+
+print("{}".format(alphabet), end="")
