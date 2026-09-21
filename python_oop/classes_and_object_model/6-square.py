@@ -51,6 +51,8 @@ class Square:
             print()
             return
 
+        print("\n" * self.__position[1], end="")
+
         for _ in range(self.__size):
             print(" " * self.__position[0] + "#" * self.__size)
 
@@ -59,8 +61,11 @@ class Square:
         if self.__size == 0:
             return ""
 
-        lines = []
+        lines = [""] * self.__position[1]
+
         for _ in range(self.__size):
-            lines.append(" " * self.__position[0] + "#" * self.__size)
+            lines.append(
+                " " * self.__position[0] + "#" * self.__size
+            )
 
         return "\n".join(lines)
