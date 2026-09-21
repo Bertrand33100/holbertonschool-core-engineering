@@ -5,8 +5,8 @@
 class Square:
     """Represent a square."""
 
-    def __init__(self, size):
-        """Initialize a Square with a Validated Size."""
+    def __init__(self, size=0):
+        """Initialize a Square with a validated size."""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
