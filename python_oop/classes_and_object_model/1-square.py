@@ -2,6 +2,7 @@
 
 """Documentation du modile."""
 
+
 class Square:
     """Documentation de la classe."""
 
