@@ -14,4 +14,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return a readable string representation of the square."""
-        return "[Square] {}/{}".format(self.width, self.height)
+        rect_str = super().__str__()
+        return rect_str.replace("Rectangle", "Square", 1)
