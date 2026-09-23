@@ -8,8 +8,8 @@ class Shape(ABC):
     """Abstarct class repreenting a Shape;"""
 
     @abstractclassmethod
-    def are(self):
-        """Calculate the are."""
+    def area(self):
+        """Calculate the area."""
         pass
     @abstractclassmethod
     def perimeter(self):
